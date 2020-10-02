@@ -1,8 +1,12 @@
 # Scraping Listed Jobs
 
-Scraping test taking listed jobs from a website, saving it into a Json file and showing the file content in a table.
+Scraping test taking listed jobs from a website, saving it into a Json file and showing the file's content in a table.
 
 Used **Puppeteer** for the scraping.
+
+## Prerequisites
+
+- Have **Node** installed.
 
 ## Installation
 

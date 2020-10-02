@@ -18,6 +18,7 @@ const puppeteer = require("puppeteer");
       const jobsLocations = document.querySelectorAll(".job-search-result p");
       const jobsUrls = document.querySelectorAll(".job-search-result a");
 
+      // Looping through the titles, urls and locations of the jobs and saving its data
       jobsTitles.forEach((jobTitle) => {
         jobs.push({ title: `${jobTitle.textContent}`, url: "", location: "" });
       });
@@ -34,6 +35,7 @@ const puppeteer = require("puppeteer");
     // Close puppeteer
     browser.close();
 
+    // Writing the the jobs data in a local json file
     let data = JSON.stringify(jobsResult);
     fs.writeFile("jobs.json", data, (err) => {
       if (err) throw err;

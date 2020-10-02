@@ -14,3 +14,5 @@ $ node scrapingTest.js
 ```
 
 The chromium browser will show up seconds later, then the **jobs.json** file will be created or overwriten and lastly the browser will close itself.
+
+Now you can open the HTML file in the browser to see the final result.
